@@ -8,7 +8,7 @@ const activeChain = "avalanche-fuji";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={activeChain} clientId="">
+    <ThirdwebProvider activeChain={activeChain} clientId="36f620abffac9608e7c699053eb012a3">
       <ChakraProvider>
         <Navbar />
         <Component {...pageProps} />

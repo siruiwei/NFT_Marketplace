@@ -209,8 +209,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const tokenId = context.params?.tokenId as string;
 
     const sdk = new ThirdwebSDK("avalanche-fuji", {
-        clientId: '',
-        secretKey: '',
+        clientId: '36f620abffac9608e7c699053eb012a3',
+        secretKey: '9_ccnb0LhLx_IDCYwuxfucxtJ3WCHzGOhAfT1hzfyKVIuBOy0Mw-QL-S2xfSTCwLaKeLNpha_ss52FbSm3LoXg',
     });
 
     const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS);
@@ -234,8 +234,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const sdk = new ThirdwebSDK("avalanche-fuji", {
-        clientId: '',
-        secretKey: '',
+        clientId: '36f620abffac9608e7c699053eb012a3',
+        secretKey: '9_ccnb0LhLx_IDCYwuxfucxtJ3WCHzGOhAfT1hzfyKVIuBOy0Mw-QL-S2xfSTCwLaKeLNpha_ss52FbSm3LoXg',
     });
 
     const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS);

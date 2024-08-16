@@ -12,6 +12,8 @@ export default function Sell() {
     const { data, isLoading } = useOwnedNFTs(contract, address);
 
     const [selectedNFT, setSelectedNFT] = useState<NFTType>();
+    console.log("Contract:", contract);
+    console.log("Address:", address);
 
     return (
         <Container maxW={"1200px"} p={5}>

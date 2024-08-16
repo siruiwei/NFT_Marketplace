@@ -20,7 +20,9 @@ export function Navbar() {
                     </Link>
                 </Flex>
                 <Flex dir={"row"} alignItems={"center"}>
-                    <ConnectWallet/>
+                <div>
+      <ConnectWallet />
+    </div>
                     {address && (
                         <Link as={NextLink} href={`/profile/${address}`}>
                             <Avatar src='https://bit.ly/broken-link' ml={"20px"}/>
